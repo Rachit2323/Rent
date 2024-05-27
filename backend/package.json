@@ -2,10 +2,14 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "dist/server.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "start": "node src/server.ts",
-    "dev": "nodemon"
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -18,13 +22,13 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.4.0"
+    "mongoose": "^8.4.0",
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.12",
-    "express": "^4.19.2",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
