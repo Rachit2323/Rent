@@ -2,7 +2,7 @@ import axios from 'axios';
 import { PropertyModel, User } from '../types/common';
 
 const apiClient = axios.create({
-    baseURL: 'https://rent-puce.vercel.app/api',
+    baseURL: 'https://rent-xfld-rachit2323s-projects.vercel.app/api',
     headers: {
         'Content-Type': 'application/json',
     },
