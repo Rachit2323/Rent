@@ -7,8 +7,11 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:3000',
-}))
+    origin: [
+        'http://localhost:3000',
+        'https://rent-ezbm.vercel.app/buyer'
+    ]
+}));
 
 
 app.use(express.json());
