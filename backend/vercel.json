@@ -2,17 +2,17 @@
     "version": 2,
     "builds": [
       {
-        "src": "server.ts",
+        "src": "src/server.ts",
         "use": "@vercel/node",
         "config": {
           "includeFiles": [
-            "controllers/**",
-            "middleware/**",
-            "models/**",
-            "routes/**",
-            "services/**",
-            "db.ts",
-            "mockData.ts"
+            "src/controllers/**",
+            "src/middleware/**",
+            "src/models/**",
+            "src/routes/**",
+            "src/services/**",
+            "src/db.ts",
+            "src/mockData.ts"
           ]
         }
       }
@@ -20,8 +20,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "server.ts"
+        "dest": "/src/server.ts"
       }
     ]
   }
-  
